@@ -1,0 +1,22 @@
+body {
+    background-color: #070F2B;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/bg_1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site__navegação {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.site__navegação a {
+    text-decoration: none;
+    color: #1B1A55;
+    text-align: center;
+    gap: 20px;
+    margin: 0 20px;
+}
