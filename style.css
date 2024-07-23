@@ -21,3 +21,17 @@ body {
     margin: 0 20px;
     font-size: 16px;
 }
+
+.logo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000; /* make sure it's on top of other elements */
+    padding: 10px; /* add some padding around the logo */
+  }
+
+  .logo img {
+    width: 250px; /* adjust the logo size as needed */
+    height: 250px;
+    opacity: 0.8;
+  }
