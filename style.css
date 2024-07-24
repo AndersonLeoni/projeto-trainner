@@ -1,19 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body {
     background-color: #070F2B;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/bg_1.jpg");
+    background-image: url("/assets/bg_1.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.site__navegação {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    /* make sure it's on top of other elements */
+    padding: 10px;
+    /* add some padding around the logo */
 }
 
-.site__navegação a {
+.logo img {
+    width: 250px;
+    height: 250px;
+    opacity: 0.8;
+}
+
+.cabecalho {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 100% 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.cabecalho a {
     text-decoration: none;
     color: #1B1A55;
     text-align: center;
@@ -22,16 +45,39 @@ body {
     font-size: 16px;
 }
 
-.logo {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1000; /* make sure it's on top of other elements */
-    padding: 10px; /* add some padding around the logo */
-  }
 
-  .logo img {
-    width: 250px; /* adjust the logo size as needed */
-    height: 250px;
-    opacity: 0.8;
-  }
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    width: 1200px;
+    height: 720px;
+    margin: 50px auto;
+    background-color: rgba(27, 26, 85, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 32px;
+}
+
+.container h1 {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 5%;
+}
+
+
+
+.container__motivacional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 200px;
+    text-align: left;
+    color: #e2e2e6;
+}
